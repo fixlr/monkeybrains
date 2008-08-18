@@ -25,7 +25,7 @@ lines = FasterCSV.read(source_file, {:col_sep => "\t"})
 lines.each do |l|
   if l[0] and l[1]
     force_index = l[1].to_i - 1
-    results[force_index] += (l[0].to_f * forces[force_index]) if forces[force_index]
+    results[force_index] += (l[0].to_f * forces[force_index])/2 if forces[force_index]
   end
 end
 
