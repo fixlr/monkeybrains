@@ -30,3 +30,5 @@ lines.each do |l|
 end
 
 0.upto(7) {|x| puts "#{x+1}: #{results[x]}"}
+
+puts "Sum: #{results[0..7].inject {|sum,x| sum ? sum+x : x}}"
