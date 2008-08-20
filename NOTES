@@ -1,0 +1,1 @@
+(force-x*displacement-x) + (force-y*displacement-y)+(force-z*displacement-z)/2 = strain energy
